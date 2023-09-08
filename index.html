@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test | S.T.T</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header class="cabecalho"></header>
+
+    <main class="text-translation">
+      <section class="voice_to_text">
+        <h1>Converter voz para texto</h1>
+
+        <div class="text-lido" name="" id="convert_text"></div>
+
+        <button class="btn-success" id="click_to_record">Iniciar</button>
+        <!-- <button class="btn btn-danger" id="btnStop">Parar</button> -->
+      </section>
+
+      <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+  
+
+      <!-- <section id="area-libras"></section> -->
+    </main>
+  </body>
+  <script type="text/javascript" src="test.js"></script>
+</html>
